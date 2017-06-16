@@ -1,0 +1,61 @@
+body {
+	background: url('background.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+ 	background-size: cover;
+}
+
+#wheel {
+	position: fixed;
+	top: 125px;
+	left: 50px;
+
+}
+
+#spinWheel {
+	position: fixed;
+	background-color: yellow;
+	color: black;
+	top: 400px;
+	left: 110px;
+}
+
+#moneyArea {
+    float: right;
+    position: fixed;
+    top: 125px;
+    right: 50px;
+    background-color: white;
+    padding: 10px;
+    border: 2px black solid;
+    width: 200px;
+    margin: 5px;
+    font-size: 14pt;
+}
+
+#spinArea {
+    float: right;
+    position: fixed;
+    top: 225px;
+    right: 50px;
+    background-color: white;
+    padding: 10px;
+    border: 2px black solid;
+    width: 200px;
+    margin: 5px;
+    font-size: 14pt;
+}
+
+#a_m {
+	position: fixed;
+	bottom: 50px;
+	left: 425px;
+}
+
+#n_z {
+	position: fixed;
+	bottom: 10px;
+	left: 425px;
+}
+
