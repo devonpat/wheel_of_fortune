@@ -21,6 +21,21 @@ body {
 	left: 110px;
 }
 
+#guessBox {
+	position: fixed;
+	top: 600px;
+	left: 620px;
+}
+
+
+#newPuzzle{
+	position: fixed;
+	background-color: yellow;
+	color: black;
+	top: 400px;
+	left: 645px;
+}
+
 #moneyArea {
     float: right;
     position: fixed;
@@ -68,6 +83,10 @@ body {
 	position: fixed;
 	bottom: 255px;
 	left: 445px;
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
 }
 
 #b2-1 {
@@ -79,6 +98,10 @@ body {
 	position: fixed;
 	bottom: 200px;
 	left: 445px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-size: 30px;
 }
 
 #b1-2 {
@@ -90,6 +113,10 @@ body {
 	position: fixed;
 	bottom: 255px;
 	left: 500px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-size: 30px;
 }
 
 #b2-2 {
@@ -101,6 +128,10 @@ body {
 	position: fixed;
 	bottom: 200px;
 	left: 500px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-size: 30px;
 }
 
 #b1-3 {
@@ -112,6 +143,10 @@ body {
 	position: fixed;
 	bottom: 255px;
 	left: 555px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-size: 30px;
 }
 
 #b2-3 {
@@ -123,6 +158,10 @@ body {
 	position: fixed;
 	bottom: 200px;
 	left: 555px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-size: 30px;
 }
 
 #b1-4 {
@@ -134,6 +173,10 @@ body {
 	position: fixed;
 	bottom: 255px;
 	left: 610px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-size: 30px;
 }
 
 #b2-4 {
@@ -145,6 +188,10 @@ body {
 	position: fixed;
 	bottom: 200px;
 	left: 610px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-size: 30px;
 }
 
 #b1-5 {
@@ -156,6 +203,10 @@ body {
 	position: fixed;
 	bottom: 255px;
 	left: 665px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-size: 30px;
 }
 
 #b2-5 {
@@ -167,6 +218,10 @@ body {
 	position: fixed;
 	bottom: 200px;
 	left: 665px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-size: 30px;
 }
 
 #b1-6 {
@@ -178,6 +233,10 @@ body {
 	position: fixed;
 	bottom: 255px;
 	left: 720px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-size: 30px;
 }
 
 #b2-6 {
@@ -189,6 +248,10 @@ body {
 	position: fixed;
 	bottom: 200px;
 	left: 720px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-size: 30px;
 }
 
 #b1-7 {
@@ -200,6 +263,10 @@ body {
 	position: fixed;
 	bottom: 255px;
 	left: 775px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-size: 30px;
 }
 
 #b2-7 {
@@ -211,6 +278,10 @@ body {
 	position: fixed;
 	bottom: 200px;
 	left: 775px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-size: 30px;
 }
 
 #b1-8 {
@@ -222,6 +293,10 @@ body {
 	position: fixed;
 	bottom: 255px;
 	left: 830px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-size: 30px;
 }
 
 #b2-8 {
@@ -233,6 +308,10 @@ body {
 	position: fixed;
 	bottom: 200px;
 	left: 830px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-size: 30px;
 }
 
 #b1-9 {
@@ -244,6 +323,10 @@ body {
 	position: fixed;
 	bottom: 255px;
 	left: 885px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-size: 30px;
 }
 
 #b2-9 {
@@ -255,6 +338,10 @@ body {
 	position: fixed;
 	bottom: 200px;
 	left: 885px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-size: 30px;
 }
 
 #b1-10 {
@@ -266,6 +353,10 @@ body {
 	position: fixed;
 	bottom: 255px;
 	left: 940px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-size: 30px;
 }
 
 #b2-10 {
@@ -277,6 +368,10 @@ body {
 	position: fixed;
 	bottom: 200px;
 	left: 940px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-size: 30px;
 }
 
 #b1-11 {
@@ -288,6 +383,10 @@ body {
 	position: fixed;
 	bottom: 255px;
 	left: 995px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-size: 30px;
 }
 
 #b2-11 {
@@ -299,5 +398,9 @@ body {
 	position: fixed;
 	bottom: 200px;
 	left: 995px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-size: 30px;
 }
 

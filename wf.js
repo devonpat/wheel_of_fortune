@@ -1,10 +1,6 @@
 $(document).ready(function() {
 
-	$("#spinWheel").click(function() {
-		var points = Math.floor((Math.random() * 10) + 1);
-		$("#spinArea").html("Spin: $ " + points);
-	});
-
+// Adding words for the game to be played
 	function Words() {
 		this.answers_array = [];
 		this.addWord = function(word) {
@@ -20,26 +16,111 @@ $(document).ready(function() {
 		};
 	};
 
-	function Word(words) {
-		this.words = words;
+	function Word(word) {
+		this.word = word;
 	};
 
 	var wordAnswers = new Words();
-	var devon = new Word;
-	var patey = new Word;
-	var wheel = new Word;
-	var fortune = new Word;
+	var devon = new Word('devon');
+	var patey = new Word('patey');
+	var wheel = new Word('wheel');
+	var fortune = new Word('fortune');
+	var stacy = new Word('stacy');
+	var kyson = new Word('kyson');
 
 	wordAnswers.addWord(devon);
 	wordAnswers.addWord(patey);
 	wordAnswers.addWord(wheel);
 	wordAnswers.addWord(fortune);
+	wordAnswers.addWord(stacy);
+	wordAnswers.addWord(kyson);
+// end of adding game words	
 
 
-	
-	$(".buttons").click(function(keypress){
+//adding the Vanna White div buttons into an array 
+	function ShowButtons() {
+		this.button_array = [];
+		this.addButton = function(buttons) {
+			this.button_array.push(buttons);
+		};
 
+		this.getButtonList = function() {
+			let button_list = [];
+			for (var i = 0; i < this.button_array.length; i++) {
+				button_list.push(this.answers_array[i].buttons);
+			}
+			console.log(button_list);
+		};
+	}
+
+	function Button(button) {
+		this.button = button;
+		this.value = "";
+		this.setvalue = function(value){
+			this.value = value;
+		};
+	};
+
+	var vanna_array = new ShowButtons();
+	var b1_1 = new Button($("#b1-1"));
+	var b1_2 = new Button($("#b1-2"));
+	var b1_3 = new Button($("#b1-3"));
+	var b1_4 = new Button($("#b1-4"));
+	var b1_5 = new Button($("#b1-5"));
+	var b1_6 = new Button($("#b1-6"));
+	var b1_7 = new Button($("#b1-7"));
+	var b1_8 = new Button($("#b1-8"));
+	var b1_9 = new Button($("#b1-9"));
+	var b1_10 = new Button($("#b1-10"));
+
+
+	vanna_array.addButton(b1_1);
+	vanna_array.addButton(b1_2);
+	vanna_array.addButton(b1_3);
+	vanna_array.addButton(b1_4);
+	vanna_array.addButton(b1_5);
+	vanna_array.addButton(b1_6);
+	vanna_array.addButton(b1_7);
+	vanna_array.addButton(b1_8);
+	vanna_array.addButton(b1_9);
+	vanna_array.addButton(b1_10);
+// end of Vanna White button additions
+
+
+	var puzzleWord = "undefined";
+
+	$("#newPuzzle").click(function(){
+		puzzleWord = wordAnswers.answers_array[Math.floor(Math.random() * wordAnswers.answers_array.length)];
+		console.log(puzzleWord.word);
+		for (var i = 0; i < puzzleWord.word.length; i++) {
+			vanna_array.button_array[i].setvalue(puzzleWord.word.charAt(i));
+		}
 	});
+
+
+
+	$("#guessBox").keypress(function(event){
+		if (event.keyCode === 13) {
+			var guess = puzzleWord.word.indexOf($("#guessBox").val()); 
+			console.log(guess);
+			if(guess >= 0){
+				console.log(vanna_array.button_array[guess].button);
+				vanna_array.button_array[guess].button.html("<p>" + vanna_array.button_array[guess].value+"</p>");
+			}
+		}
+	});
+
+	$("#spinWheel").click(function() {
+		var points = Math.floor((Math.random() * 10) + 1);
+		$("#spinArea").html("Spin: $ " + points);
+	});
+
+	$("#moneyArea") function(){
+
+	};
+
+
+
 
 }); // end doc ready function
 
