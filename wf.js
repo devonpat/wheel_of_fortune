@@ -88,6 +88,7 @@ $(document).ready(function() {
 
 
 	var puzzleWord = "undefined";
+	var your_points = parseInt($("#money").text());
 
 	$("#newPuzzle").click(function(){
 		puzzleWord = wordAnswers.answers_array[Math.floor(Math.random() * wordAnswers.answers_array.length)];
@@ -97,27 +98,29 @@ $(document).ready(function() {
 		}
 	});
 
-
+	$("#spinWheel").click(function() {
+		var points = Math.floor((Math.random() * 10) + 1);
+		$("#spin").html(points);
+	});
 
 	$("#guessBox").keypress(function(event){
+		var guess = puzzleWord.word.indexOf($("#guessBox").val());
 		if (event.keyCode === 13) {
-			var guess = puzzleWord.word.indexOf($("#guessBox").val()); 
-			console.log(guess);
 			if(guess >= 0){
 				console.log(vanna_array.button_array[guess].button);
 				vanna_array.button_array[guess].button.html("<p>" + vanna_array.button_array[guess].value+"</p>");
 			}
+			
+			if (guess >= 0) {
+				your_points += parseInt($("#spin").text());
+			}else { 
+				your_points -= parseInt($("#spin").text());
+			}
+			$('#money').text(your_points);
 		}
 	});
 
-	$("#spinWheel").click(function() {
-		var points = Math.floor((Math.random() * 10) + 1);
-		$("#spinArea").html("Spin: $ " + points);
-	});
 
-	$("#moneyArea") function(){
-
-	};
 
 
 
