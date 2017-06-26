@@ -23,14 +23,12 @@ $(document).ready(function() {
 	var wordAnswers = new Words();
 	var devon = new Word('devon');
 	var patey = new Word('patey');
-	var wheel = new Word('wheel');
 	var fortune = new Word('fortune');
 	var stacy = new Word('stacy');
 	var kyson = new Word('kyson');
 
 	wordAnswers.addWord(devon);
 	wordAnswers.addWord(patey);
-	wordAnswers.addWord(wheel);
 	wordAnswers.addWord(fortune);
 	wordAnswers.addWord(stacy);
 	wordAnswers.addWord(kyson);
@@ -89,6 +87,7 @@ $(document).ready(function() {
 
 	var puzzleWord = "undefined";
 	var your_points = parseInt($("#money").text());
+	var right_answers = 0;
 
 	$("#newPuzzle").click(function(){
 		puzzleWord = wordAnswers.answers_array[Math.floor(Math.random() * wordAnswers.answers_array.length)];
@@ -113,8 +112,12 @@ $(document).ready(function() {
 			
 			if (guess >= 0) {
 				your_points += parseInt($("#spin").text());
+				right_answers++;
 			}else { 
 				your_points -= parseInt($("#spin").text());
+			}
+			if (right_answers == puzzleWord.word.length){
+				alert ("you win");
 			}
 			$('#money').text(your_points);
 		}
@@ -127,3 +130,4 @@ $(document).ready(function() {
 
 }); // end doc ready function
 
+//
